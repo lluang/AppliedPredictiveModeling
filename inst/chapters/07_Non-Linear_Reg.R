@@ -151,7 +151,7 @@ knnTune
 
 plot(knnTune)
 
-testResults$Knn <- predict(svmRTune, solTestXtrans[, names(knnDescr)])
+testResults$Knn <- predict(knnTune, solTestXtrans[, names(knnDescr)])
 
 ################################################################################
 ### Session Information
